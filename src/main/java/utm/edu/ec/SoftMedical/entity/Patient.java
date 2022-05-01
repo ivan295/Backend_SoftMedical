@@ -3,14 +3,13 @@ package utm.edu.ec.SoftMedical.entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.UUID;
 
 @Data
 @Entity
 public class Patient {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     @Column(name="nombre", nullable = false, length = 70)
     private String name;
