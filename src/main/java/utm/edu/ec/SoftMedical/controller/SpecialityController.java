@@ -1,5 +1,5 @@
 package utm.edu.ec.SoftMedical.controller;
-/*
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import utm.edu.ec.SoftMedical.entity.Speciality;
@@ -10,9 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping(path="especialidad")
 
- */
 public class SpecialityController {
-    /*
     @Autowired
     private ISpecialityService specialServ;
 
@@ -41,5 +39,4 @@ public class SpecialityController {
         return specialServ.modificar(speciality);
     }
 
-     */
 }

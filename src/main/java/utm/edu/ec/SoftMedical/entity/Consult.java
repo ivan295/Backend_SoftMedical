@@ -1,11 +1,14 @@
 package utm.edu.ec.SoftMedical.entity;
 
 import lombok.Data;
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 
 @Data
 @Entity
 public class Consult {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

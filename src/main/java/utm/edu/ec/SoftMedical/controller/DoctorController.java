@@ -5,6 +5,10 @@ import org.springframework.web.bind.annotation.*;
 import utm.edu.ec.SoftMedical.entity.Doctor;
 import utm.edu.ec.SoftMedical.service.IDoctorService;
 
+import javax.persistence.EntityManager;
+import javax.persistence.criteria.*;
+import javax.print.Doc;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -37,4 +41,10 @@ public class DoctorController {
     public Doctor modificar(@RequestBody Doctor doctor){
         return doctorServ.modificar(doctor);
     }
+
+    @GetMapping("/listcmp/{cmp}")
+    public List<Doctor> findDoctorByCmp(@RequestParam String cmp) {
+        return doctorServ.findDoctorByCmp(cmp);
+    }
+
 }

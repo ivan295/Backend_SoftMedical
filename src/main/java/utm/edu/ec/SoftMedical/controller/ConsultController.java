@@ -25,6 +25,7 @@ public class ConsultController {
 
     @PostMapping
     public Consult registrar(@RequestBody Consult consult){
+
         return conServ.registrar_consult(consult);
     }
 

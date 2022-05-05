@@ -10,4 +10,5 @@ public interface IDoctorService {
     public List<Doctor> listar();
     public Doctor listarPorId(Integer id);
     public void eliminar(Integer id);
+    List<Doctor> findDoctorByCmp(String cmp);
 }
