@@ -5,6 +5,7 @@ import utm.edu.ec.SoftMedical.entity.Consult;
 import utm.edu.ec.SoftMedical.service.IConsultService;
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping(path="/consulta")
 

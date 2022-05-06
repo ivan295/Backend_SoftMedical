@@ -20,18 +20,19 @@ public class DoctorRepositoryTest {
     @Test
     public void shouldGetDoctorByValue(){
         Doctor docsave = new Doctor();
-        docsave.setName("abc");
-        docsave.setLastname("def");
+        docsave.setName("doctor 1");
+        docsave.setLastname("apellido doctor 1");
         docsave.setDni("1234569875");
         docsave.setCmp("doc001");
         repodoctor.save(docsave);
 
-        Optional<Doctor> customerSaved = repodoctor.findById(docsave.getId());
+        Optional<Doctor> customerSaved = repodoctor.findById(docsave.getId_doctor());
         Assertions.assertEquals(customerSaved.get().getName(), docsave.getName(),
                 "Created customer name is not the same");
 
         List<Doctor> listdoctor = repodoctor.findDoctorByCmp("doc001");
         Assertions.assertFalse(listdoctor.isEmpty(), "should return some elements");
+
 
 
     }

@@ -7,6 +7,7 @@ import utm.edu.ec.SoftMedical.service.ISpecialityService;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping(path="especialidad")
 
