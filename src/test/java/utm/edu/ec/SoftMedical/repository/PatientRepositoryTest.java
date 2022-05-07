@@ -30,6 +30,7 @@ public class PatientRepositoryTest {
         Optional<Patient> customerSaved = repopatient.findById(patientsave.getId_patient());
         Assertions.assertEquals(customerSaved.get().getName(), patientsave.getName(),
                 "Created Patient name is not the same");
+        repopatient.delete(patientsave);
     }
 
 }

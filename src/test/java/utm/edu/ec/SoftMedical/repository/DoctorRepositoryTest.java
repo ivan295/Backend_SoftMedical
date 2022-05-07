@@ -33,6 +33,7 @@ public class DoctorRepositoryTest {
         List<Doctor> listdoctor = repodoctor.findDoctorByCmp("doc001");
         Assertions.assertFalse(listdoctor.isEmpty(), "should return some elements");
 
+        repodoctor.delete(docsave);
 
 
     }

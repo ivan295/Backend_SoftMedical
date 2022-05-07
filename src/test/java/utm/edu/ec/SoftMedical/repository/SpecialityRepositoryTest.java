@@ -25,5 +25,6 @@ public class SpecialityRepositoryTest {
         Optional<Speciality> customerSaved = repospeciality.findById(specialitysave.getId_speciality());
         Assertions.assertEquals(customerSaved.get().getDescription(), specialitysave.getDescription(),
                 "Created Speciality name is not the same");
+        repospeciality.delete(specialitysave);
     }
 }
